@@ -5,6 +5,10 @@ body{
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
 }
+
+body * {
+    box-sizing: border-box;
+}
 /*
 Deixando a div main centralizada e com a cor do background correta.
 */
@@ -127,4 +131,35 @@ Estilizando botão
     background: forestgreen;
     cursor: pointer;
     box-shadow: 0px 10px 20px -12px rgba(11, 185, 83, 0.993);
+}
+/*
+Melhorar a responsividade
+*/
+@media only screen and (max-widht: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-widht: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .left > h1{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
 }
